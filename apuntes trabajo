@@ -1,0 +1,16 @@
+variables :  personajes / cualidades / ataques / ¿ enemigos ?
+
+personajes --> tanque // asesino // ¿ mago ? // guerrero
+
+cualidades --> tanque:
+                    --- gordo
+                    --- veloz
+
+                asesino:
+                    --- lanzado
+                    --- flaco
+
+ataques --> ataque fuerte , ataque normal , ataque rapido , ¿ ataque cargado ?
+
+
+
