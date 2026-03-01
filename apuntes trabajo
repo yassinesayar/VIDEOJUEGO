@@ -1,16 +1,29 @@
-variables :  personajes / cualidades / ataques / ¿ enemigos ?
+Dentro de la estructura MVC vamos a crear la siguiente estrcutura 
 
-personajes --> tanque // asesino // ¿ mago ? // guerrero
+modelo : 
+Personaje.java - Yeray
+PersonajeFisico.java - Yeray
+PersonajeMagico.java -Yeray
 
-cualidades --> tanque:
-                    --- gordo
-                    --- veloz
+    /Interfaces
+        Curable.java - Yeray
+        Defendible.java - Yeray
+        Sigiloso.java - Yeray
+    
+Guerrero.java - Gabriel               
+Arquero.java - Gabriel                
+Asesino.java - Gabriel                
+Mago.java - Gabriel                  
+Hechicero.java - Gabriel             
+Curandero.java - Gabriel
 
-                asesino:
-                    --- lanzado
-                    --- flaco
+Controlador :
+GestorJuego.java -Yassine/Dani
 
-ataques --> ataque fuerte , ataque normal , ataque rapido , ¿ ataque cargado ?
+Vista : 
+Consola.java - Yassine/Dani
 
+app/
+Main.java -Yassine/Dani
 
 
