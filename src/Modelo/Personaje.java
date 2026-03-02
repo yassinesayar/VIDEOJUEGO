@@ -9,13 +9,14 @@ public abstract class Personaje{
  private String idPersonaje;
  private double Salud;
  private double Nivel;
-  
+  private double Experiencia;
 //constructor
 //No añadimos el id entre parentesis porque haremos que se genere solo y no reciba nada
 public Personaje(String Nombre, double Salud , double Nivel){
     this.Nombre=Nombre;
     this.Salud=Salud;
     this.Nivel=Nivel;
+    this.Experiencia=Experiencia;
     //Usamos UUID para generar id automaticos y nunca repetidos con string, porque con double nos costaria
     //llevar mas la cuenta manualmente
     this.idPersonaje=UUID.randomUUID().toString();
@@ -35,6 +36,9 @@ public double getSalud(){
 public double getNivel(){
     return Nivel;
 }
+public double getExperiencia(){
+    return Experiencia;
+}
 
 //setters
 public void setSalud(double Salud){
@@ -47,7 +51,18 @@ public void setNivel(double Nivel){
 public void setNombre(String Nombre){
     this.Nombre=Nombre;
 }
+public void setExperiencia(){
+    this.Experiencia=Experiencia;
+}
 
+//metodo para relacionar la experiencia con los niveles , esto lo implementamos en ataques etc
+public void subirExperiencia(int cantidad){
+    this.Experiencia += cantidad;
+    if(this.Experiencia >= 100){
+        this.Nivel++;
+        this.Experiencia = 0;
+    }
+}
 //vamos a crear un metodo toString para que la info de un personaje se vea organizada
 //como la ficha de un personaje
 @Override
