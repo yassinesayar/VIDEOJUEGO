@@ -11,4 +11,27 @@ public abstract class PersonajeFisico extends Personaje {
         this.Armadura=Armadura;
         this.Fuerza=Fuerza;
     }
+
+    //creamos un metodo de golpe basico
+    public void golpeBasico(Personaje objetivo){
+    objetivo.setSalud(objetivo.getSalud() - Fuerza);
+    System.out.println(getNombre() + " da un golpe básico a " + objetivo.getNombre() + " causando " + Fuerza + " de daño!");
+}
+
+//Getters
+public int getArmadura(){
+    return Armadura;
+}
+public int getFuerza(){
+    return Fuerza;
+}
+
+//setter
+public void setArmadura(int Armadura){
+    this.Armadura = Armadura;
+}
+public void setFuerza(int Fuerza){
+    this.Fuerza = Fuerza;
+}
+
 }
