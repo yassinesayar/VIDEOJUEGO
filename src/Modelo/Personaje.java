@@ -24,7 +24,7 @@ public Personaje(String Nombre, double Salud , double Nivel){
 
 //creamos el metodo para atacar y abstracto otra vez porque es un metodo sin cuerpo y general
 //no creamos mas acciones porque atacar es el la unica accion que tienen en comun todos los personajes
-public abstract void Atacar();
+public abstract void atacar();
 
 //getters
 public String getNombre(){
