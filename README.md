@@ -27,7 +27,7 @@ Personaje (abstract)
 │   └── Asesino  
 │  
 └── PersonajeMagico (abstract)  
-  ├── Mago  
+  ├── Mago, Curandero  
   
 
 ## Ejecución del programa
