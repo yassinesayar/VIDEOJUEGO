@@ -28,7 +28,7 @@ Personaje (abstract)
 │  
 └── PersonajeMagico (abstract)  
   ├── Mago  
-  └── Clerigo
+  
 
 ## Ejecución del programa
 
